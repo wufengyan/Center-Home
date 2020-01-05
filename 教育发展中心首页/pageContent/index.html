@@ -1,0 +1,523 @@
+<!--/*
+ * 《顺德区教育科研管理系统V1.0》
+ * 系统主页文件
+ * 创建者: 柯华坤
+ * 创建时间：2011.11.30
+*/-->
+
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>顺德区教育科研管理系统</title>
+    <link href="./Style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="Style/ER_Common.css" rel="stylesheet" type="text/css" />
+    <link href="Style/ER_Index.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./Script/nav.js" type="text/javascript"></script>
+
+    <script src="Script/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="Script/jqthumb.js" type="text/javascript"></script>
+
+    <style>
+        .tab-content>.tab-pane {
+            display: none;
+        }
+        
+        .tab-content>.active {
+            display: block;
+        }
+        
+        .BackGroup_image {
+            width: 978px;
+            height: 200px;
+            background: url(images/top.png) no-repeat;
+            margin: 5px auto;
+        }
+        
+        .div-interval {
+            height: 8px;
+        }
+    </style>
+    <script type="text/javascript">
+        //图片轮播 flexslider
+        $(function() {
+            $('#home_slider').flexslider({
+                animation: 'slide',
+                controlNav: true,
+                directionNav: false, //左右切换按钮
+                animationLoop: true,
+                slideshow: true,
+                useCSS: false,
+                animationSpeed: 1000, //切换速度
+                slideshowSpeed: 2000, //展示时间
+            });
+
+        });
+        //图片自适应 jqthumb
+        $(function() {
+            $('.slides li img').jqthumb({
+                width: '140%',
+                height: 350,
+                after: function(imgObj) {
+                    imgObj.css('opacity', 0).animate({
+                        opacity: 1
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body style="background-color:#C0C0C0;">
+    <!-- header star-->
+    <div class="BackGroup_image">
+        <td width="900"><a style="line-height: 29px;height: 26px;float:left;margin:5px 0 0 60px;font-size: 12px;" href="http://www.sdedu.net/" onclick="window.external.addFavorite(this.href,this.title);return false;" title="顺德区教育发展中心" rel="sidebar">收藏 | 顺德区教育发展中心</a></td>
+        <a style="line-height: 30px;height: 26px;float:right;margin: 5px 20px 0 0;font-size: 12px;" href="http://www.sdedu.net/cas/login?service=http%3A%2F%2Fjyfzzx.sdedu.net%2Flogin">请登录</a>
+        <span style="line-height: 29px;height: 26px;float:right;margin:5px 15px 0 -5px;font-size: 12px;">|  欢迎光临</span>
+        <a style="line-height: 29px;height: 26px;float:right;margin:5px 10px 0 0;font-size: 12px;" href="http://jyfzzx.sdedu.net/feedback.html" target="_blank">反馈建议</a>
+    </div>
+    <!-- header end-->
+
+    <!--nav,start-->
+    <div class="nav100">
+        <!-- menu_nav  margin:0 auto; -->
+        <div class="menu_nav" id="new_menunav">
+            <a href="http://jyfzzx.sdedu.net/index.html">
+                <span id="Image1">首页</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/openpage/newspage/202.html">
+                <span id="Image2">中心概况</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=1">
+                <span id="Image6">党建园地</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=2">
+                <span id="Image7">教研专题</span>
+            </a>
+
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=3">
+                <span id="Image5">科研专题</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=4">
+                <span id="Image3">培训专题</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=5">
+                <span id="Image4">信息化专题</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=6">
+                <span id="Image4">通知公告</span>
+            </a>
+            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=7">
+                <span id="Image4">中心快讯</span>
+            </a>
+        </div>
+    </div>
+    <!--nav end-->
+
+    <!-- 中间内容 -->
+    <div id="middl">
+        <div class="mid_right">
+            <div class="right_one">
+                <h1>中心快讯<span style=" position:relative;right:-800px;"><a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=1">更多>></a></span></h1>
+                <div class="right_one_img">
+                    <!-- 图片宽高的 滑动点-->
+                    <div class="block_home_slider">
+                        <div id="home_slider" class="flexslider">
+                            <!-- 滑动的图片 -->
+                            <ul class="slides">
+                                <li title="教育部教育管理信息中心领导调研我区教育信息化工作">
+                                    <a href="http://jyfzzx.sdedu.net/openpage/newspage/862.html" target="_blank">
+                                        <img src="./newsSmallPic/8041542706140644.png" alt="" />
+                                        <h>教育部教育管理信息中心领导调研我区教育信息化工作</h>
+                                    </a>
+                                </li>
+                                <li title="勠力同心，以积极姿态迎接更美好的明天">
+                                    <a href="http://jyfzzx.sdedu.net/openpage/newspage/723.html" target="_blank">
+                                        <img src="./newsSmallPic/4411536722364552.png" alt="" />
+                                        <h>勠力同心，以积极姿态迎接更美好的明天</h>
+                                    </a>
+                                </li>
+                                <li title="顺德区代表队在第十九届全国中小学电脑制作活动中再获佳绩">
+                                    <a href="http://jyfzzx.sdedu.net/openpage/newspage/682.html" target="_blank">
+                                        <img src="./newsSmallPic/6961532488794247.jpg" alt="" />
+                                        <h>顺德区代表队在第十九届全国中小学电脑制作活动中再获佳绩</h>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 图片右边的内容 -->
+                <div class="right_one_link">
+                    <ul>
+                        <li><em>[2018-11-20]</em><a href="http://jyfzzx.sdedu.net/openpage/newspage/862.html" title="教育部教育管理信息中心领导调研我区教育信息化工作" target="_blank">教育部教育管理信息中心领导调研我...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-11-20]</em><a href="http://jyfzzx.sdedu.net/news.sdedu.net/newsFile/newsPage/171312.html" title="学思融创" 化繁为简——第二届顺德教育创客节暨粤港澳大湾区青少年科技创新大赛顺利举办="" target="_blank">学思融创 化繁为简——第二届顺德教...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-10-18]</em><a href="http://jyfzzx.sdedu.net/news.sdedu.net/newsFile/newsPage/169384.html" title="经验分享促交流，专家引领促发展——顺德教育发展中心举办中学、中职学生生涯规划教育研讨活动" target="_blank">经验分享促交流，专家引领促发展—...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-10-08]</em><a href="http://jyfzzx.sdedu.net/news.sdedu.net/newsFile/newsPage/168272.html" title="凝聚共识，奋力开创教育发展新局面——2018年“论道顺德教育”政协专场论坛活动记录" target="_blank">凝聚共识，奋力开创教育发展新局面...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-09-12]</em><a href="http://jyfzzx.sdedu.net/openpage/newspage/726.html" title="信息化如何助力新高考？——顺德区教育发展中心顺利举行新高考研讨会" target="_blank">信息化如何助力新高考？——顺德区...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-09-12]</em><a href="http://jyfzzx.sdedu.net/openpage/newspage/725.html" title="适应新岗位，迎接新挑战，创造新业绩——记顺德区教育发展中心新任中层欢迎会" target="_blank">适应新岗位，迎接新挑战，创造新业...</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><em>[2018-09-12]</em><a href="http://jyfzzx.sdedu.net/openpage/newspage/724.html" title="举人工智能行业之力，促教育教学深层变革——我区受邀参加首届全国智能教育大会并作专题报告" target="_blank">举人工智能行业之力，促教育教学深..</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- 间隔距离 -->
+            <div class="right_dot"></div>
+
+            <div class="right_two">
+                <!-- 选项卡菜单-->
+                <ul id="bootstrapTab" class="nav nav-tabs nav-pills" role="tablist">
+                    <!-- <a href="#jyzt" role="tab" data-toggle="tab">教研专题</a> -->
+                    <li class="active" style="margin-left:10px;"><a href="#jyzt" role="tab" data-toggle="tab">专题汇总</a></li>
+                    <li><a href="#jyzt" role="tab" data-toggle="tab">教研专题</a></li>
+                    <li><a href="#djyd" role="tab" data-toggle="tab">党建园地</a> </li>
+                    <li><a href="#zxgk" role="tab" data-toggle="tab">中心概况</a></li>
+                    <li><a href="#kyzt" role="tab" data-toggle="tab">科研专题</a></li>
+                    <li><a href="#pxzt" role="tab" data-toggle="tab">培训专题</a></li>
+                    <li><a href="#xxhzt" role="tab" data-toggle="tab">信息化专题</a></li>
+                    <li><a href="#tzgg" role="tab" data-toggle="tab">通知公告</a></li>
+                    <li><a href="#zxkx" role="tab" data-toggle="tab">中心快讯</a></li>
+                </ul>
+                <!-- 选项卡面板 -->
+                <div id="myTabContent" class="tab-content">
+                    <!-- 中心概括内容 -->
+                    <div class="tab-pane fade" id="zxgk">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><em>[2018-12-22]</em><a href="http://jyfzzx.sdedu.net/openpage/newspage/202.html" title=" 佛山市顺德区教育发展中心简介" target="_blank">佛山市顺德区教育发展中心简介</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/openpage/newspage/202.html"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 党建园地内容 -->
+                    <div class="tab-pane fade" id="djyd">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/821.html" title="中共佛山市顺德区教育发展中心总支部委员会关于表彰2017学年度优秀党员的决定" target="_blank">中共佛山市顺德区教育发展中心...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/642.html" title="顺德区教育发展中心党总支召开2018年书记述责述廉会议" target="_blank">顺德区教育发展中心党总支召开...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/301.html" title="佛山市顺德区教育发展中心党总支改选大会顺利召开" target="_blank">佛山市顺德区教育发展中心党总...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://http://www.ccps.gov.cn/lhzl/201803/t20180321_104931.html" title="习近平：在第十三届全国人民代表大会第一次会议上的讲话" target="_blank">习近平：在第十三届全国人民代...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/250.html" title="顺德区教育发展中心召开员工大会学习传达党的十九大精神" target="_blank">顺德区教育发展中心召开员工大...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://www.ccps.gov.cn/xxgcsjdjs/201710/t20171029_98845.html" title="中国共产党章程" target="_blank">中国共产党章程</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net//openpage/newspage/248.html" title="区教育系统学习贯彻党的十九大会议精神学习材料" target="_blank">区教育系统学习贯彻党的十九大...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=1"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 教研专题内容 -->
+                    <div class="tab-pane fade in active" id="jyzt">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/686.html" title="新时代" 新思考="" 新发展——顺德区教研员参加佛山市中小学教研员、骨干教师研修班学习纪实="" target="_blank">新时代 新思考 新发展——顺德区...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/483.html" title="交流共议促思维碰撞" 聚焦素养增教学效率—顺德区2018年高二历史一轮复习同课异构研讨会顺利举行="" target="_blank">交流共议促思维碰撞 聚焦素养增...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/482.html" title="精准备考" 科学冲刺="" 务求实效="" ——顺德区2018届九年级教学质量检测分析会顺利举行="" target="_blank">精准备考 科学冲刺 务求实效 —...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/465.html" title="2018年顺德区小学科学新教材解读及分享活动" target="_blank">2018年顺德区小学科学新教材解读...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/464.html" title="“给学生一个温暖的生命教育”" ——顺德区小学心理课堂教学研讨活动顺利开展="" target="_blank">给学生一个温暖的生命教育” —...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/463.html" title="让生命教育课有趣而实用" ——顺德区初中生命教育主题心理课堂教学研讨活动顺利开展="" target="_blank">让生命教育课有趣而实用 ——顺德...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/462.html" title="交流融合多元智慧，研讨碰撞思维火花" ——顺德区中职心理教研组开展心理课堂教学研讨暨督导活动="" target="_blank">交流融合多元智慧，研讨碰撞思维...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/443.html" title="区域联合教研促发展，版画特色教育呈实效" ——记“尚美文化”顺德区中小学版画教学研讨会="" target="_blank">区域联合教研促发展，版画特色教...</a></li>
+                            </ul>
+                        </div>
+                        <div class="left_one_link_2">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/442.html" title="同课异构各施教学方法，同行齐议共话课堂精彩" ——全区高二生物教学研讨会在伦教中学召开="" target="_blank">同课异构各施教学方法，同行齐议...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/441.html" title="创新视导形式" 助力冲刺备考="" ——顺德区佛山二模后高三备考视导工作如期开展="" target="_blank">创新视导形式 助力冲刺备考 ——...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/365.html" title="多方齐碰撞" 合力促教研="" ——顺德区教育发展中心召开区域联合教研工作座谈会="" target="_blank">多方齐碰撞 合力促教研 ——顺...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=2"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 科研专题内容 -->
+                    <div class="tab-pane fade" id="kyzt">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/215.html" title="教育部课题在顺德研讨" 教改专家在碧桂园论道="" ——教育部专项课题研讨活动顺利举行="" 张英华="" target="_blank">教育部课题在顺德研讨 教改专...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/255.html" title="顺德区教育发展中心组织开展区教育科研规划" 2018年度课题选题征集活动="" target="_blank">顺德区教育发展中心组织开展区...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/253.html" title="重点课题开题论证，科研活动多级联动" target="_blank">重点课题开题论证，科研活动多...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/254.html" title="顺德区教育发展中心组织开展2014-2016年" 立项课题中期检查="" target="_blank">顺德区教育发展中心组织开展20...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=3"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 培训专题内容 -->
+                    <div class="tab-pane fade" id="pxzt">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/702.html" title="2018年顺德区新高考改革培训在沪举行" target="_blank">2018年顺德区新高考改革培训在...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/601.html" title="助力教育家成长，引领教育新发展" ——我区特级教师工作会议顺利召开="" target="_blank">助力教育家成长，引领教育新发...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/561.html" title="聆听、研讨、提升" ——纪顺德区幼儿园骨干教师培训班第二次集中培训学习="" target="_blank">聆听、研讨、提升 ——纪顺德区...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/501.html" title="顺德区名班主任江阴跟岗学习高级研修班" target="_blank"> 顺德区名班主任江阴跟岗学习高...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/444.html" title="引领提升，遇见未来" ——顺德区幼儿园骨干教师培训启动会="" 暨艺术主题培训顺利举行="" target="_blank">引领提升，遇见未来 ——顺德区...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/381.html" title="顺德区2018年教师继续教育工作会议顺利召开" target="_blank">顺德区2018年教师继续教育工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/364.html" title="南海区教育局来顺德区教育发展中心访问交流" target="_blank">南海区教育局来顺德区教育发展...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/363.html" title="走进行进管乐--顺德区中小学音乐教师（管乐主题）教育讲坛隆重举行" target="_blank">走进行进管乐--顺德区中小学音...</a></li>
+                            </ul>
+                        </div>
+                        <div class="left_one_link_2">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/347.html" title="用镜头看世界" 按快门展风采="" ——记顺德区中小学美术（摄影）学科教师培训班开班="" target="_blank">用镜头看世界 按快门展风采 —...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/343.html" title="发挥骨干之用，引领学习之风" ——顺德区第七批骨干教师培训项目开班典礼通讯="" target="_blank">发挥骨干之用，引领学习之风 —...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/321.html" title="腾飞乘风起" ——顺德区中小学办学绩效评估人员系列培训通讯="" target="_blank">腾飞乘风起 ——顺德区中小学办...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=4"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 信息化专题内容 -->
+                    <div class="tab-pane fade" id="xxhzt">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/682.html" title="顺德区代表队在第十九届全国中小学电脑制作活动中再获佳绩" target="_blank">顺德区代表队在第十九届全国中...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/629.html" title="科研之路" 砥砺前行="" ——佛山市“基于机器人教学的创新人才培养行动研究”课题开题会="" target="_blank">科研之路 砥砺前行 ——佛山市...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/628.html" title="举办2018年顺德区中小学教师计算机软件评审活动" target="_blank">举办2018年顺德区中小学教师计...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/627.html" title="召开第二届顺德教育创客节筹备工作会议" target="_blank">召开第二届顺德教育创客节筹备...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/626.html" title="顺德中学生代表队扬威国际中学生科技大赛" 勇夺3金2银1铜="" target="_blank">顺德中学生代表队扬威国际中学...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/625.html" title="举办广东省教育科学规划教育信息技术" 专项课题结题会="" target="_blank">举办广东省教育科学规划教育信...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/624.html" title="顺德区代表队在广东省第十六届中小学电脑机器人活动斩获佳绩" target="_blank">顺德区代表队在广东省第十六届...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/623.html" title="我区在广东省第十六届中小学电脑虚拟机器人竞赛" 喜获佳绩="" target="_blank">我区在广东省第十六届中小学电...</a></li>
+                            </ul>
+                        </div>
+                        <div class="left_one_link_2">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/346.html" title="深化学科实验教学改革，落实实验操作考查工作——2018年初中化学实验操作考查考点学校检查" target="_blank">深化学科实验教学改革，落实实...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/345.html" title="机器人教育开启创新人才培养新模式—顺德区第十六届中小学电脑机器人比赛圆满成功" target="_blank">机器人教育开启创新人才培养新...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/213.html" title="顺德区第十六届中小学电脑虚拟机器人比赛圆满完成" target="_blank">顺德区第十六届中小学电脑虚拟...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=5"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 通知公告内容 -->
+                    <div class="tab-pane fade" id="tzgg">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/841.html" title="2018学年第一学期第9周重点工作提示" target="_blank">2018学年第一学期第9周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/822.html" title="2018学年第一学期第8周重点工作提示" target="_blank">2018学年第一学期第8周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/802.html" title="2018学年第一学期第7周重点工作提示" target="_blank">2018学年第一学期第7周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/781.html" title="2018学年第一学期第6周重点工作提示" target="_blank">2018学年第一学期第6周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/761.html" title="2018学年第一学期第4周重点工作提示" target="_blank">2018学年第一学期第4周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/741.html" title="2018学年第一学期第3周重点工作提示" target="_blank">2018学年第一学期第3周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/722.html" title="2018学年第一学期第2周重点工作提示" target="_blank">2018学年第一学期第2周重点工作...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/681.html" title="2017学年第二学期第21周重点工作提示" target="_blank">2017学年第二学期第21周重点工...</a></li>
+                            </ul>
+                        </div>
+                        <div class="left_one_link_2">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/641.html" title="2017学年第二学期第20周重点工作提示" target="_blank">2017学年第二学期第20周重点工...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/602.html" title="2017学年第二学期第19周重点工作提示" target="_blank">2017学年第二学期第19周重点工...</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/581.html" title="2017学年第二学期第18周重点工作提示" target="_blank">2017学年第二学期第18周重点工...</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=6"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                    <!-- 中心快讯内容 -->
+                    <div class="tab-pane fade" id="zxkx">
+                        <div class="left_one_link_1">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/862.html" title="教育部教育管理信息中心领导调研我区教育信息化工作" target="_blank">教育部教育管理信息中心领导调研我...&nbsp;&nbsp;2018-11-20</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://news.sdedu.net/newsFile/newsPage/171312.html" title="学思融创" 化繁为简——第二届顺德教育创客节暨粤港澳大湾区青少年科技创新大赛顺利举办="" target="_blank">学思融创 化繁为简——第二届顺德教...&nbsp;&nbsp;2018-11-20</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://news.sdedu.net/newsFile/newsPage/169384.html" title="经验分享促交流，专家引领促发展——顺德教育发展中心举办中学、中职学生生涯规划教育研讨活动" target="_blank">经验分享促交流，专家引领促发展—...&nbsp;&nbsp;2018-10-18</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://news.sdedu.net/newsFile/newsPage/168272.html" title="凝聚共识，奋力开创教育发展新局面——2018年“论道顺德教育”政协专场论坛活动记录" target="_blank">凝聚共识，奋力开创教育发展新局面...&nbsp;&nbsp;2018-10-08</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/726.html" title="信息化如何助力新高考？——顺德区教育发展中心顺利举行新高考研讨会" target="_blank">信息化如何助力新高考？——顺德区...&nbsp;&nbsp;2018-09-12</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/725.html" title="适应新岗位，迎接新挑战，创造新业绩——记顺德区教育发展中心新任中层欢迎会" target="_blank">适应新岗位，迎接新挑战，创造新业...&nbsp;&nbsp;2018-09-12</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/724.html" title="举人工智能行业之力，促教育教学深层变革——我区受邀参加首届全国智能教育大会并作专题报告" target="_blank">举人工智能行业之力，促教育教学深...&nbsp;&nbsp;2018-09-12</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/723.html" title="勠力同心，以积极姿态迎接更美好的明天" target="_blank">勠力同心，以积极姿态迎接更美好的...&nbsp;&nbsp;2018-09-12</a></li>
+                            </ul>
+                        </div>
+                        <div class="left_one_link_2">
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/721.html" title="精准把脉科学备考，戮力同心再创辉煌" target="_blank">精准把脉科学备考，戮力同心再创辉煌&nbsp;&nbsp;2018-09-12</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/661.html" title="共融互通，交流共进" ——新兴县教育局一行莅临区教育发展中心交流访问="" target="_blank">共融互通，交流共进 ——新兴县教育...&nbsp;&nbsp;2018-07-09</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/643.html" title="顺德体育教师参加广东省第十五届运动会" target="_blank">顺德体育教师参加广东省第十五届运...&nbsp;&nbsp;2018-07-06</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/622.html" title="顺德区委常委、宣传部部长唐磊晶，区教育局局长闵乐萍莅临区教育发展中心调研" target="_blank">顺德区委常委、宣传部部长唐磊晶，...&nbsp;&nbsp;2018-07-05</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/621.html" title="规范促公平，严谨提质量——顺德区2017学年第二学期义务教育阶段教学质量检测巡考工作记" target="_blank">规范促公平，严谨提质量——顺德区...&nbsp;&nbsp;2018-07-05</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://jyfzzx.sdedu.net/openpage/newspage/522.html" title="顺德区2017学年中小学办学绩效评估高中组" 实地评估评前工作会顺利召开="" target="_blank">顺德区2017学年中小学办学绩效评估...&nbsp;&nbsp;2018-06-12</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://news.sdedu.net/newsFile/newsPage/164196.html" title="为高考加油，为梦想助力——顺德区教育发展中心领导高考前夕到校看望高三师生纪实" target="_blank">为高考加油，为梦想助力——顺德区...&nbsp;&nbsp;2018-06-05</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_dot_one">
+                            <a href="http://jyfzzx.sdedu.net/moreNews.html?channelid=7"><img src="./images/more.gif" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 间隔距离 -->
+    <div class="right_dot"></div>
+    <!--友情链接 start-->
+    <div class="flink div-interval">
+        <div>
+            <!-- indexLink.jsindexBottom.js与显示一些距离通过style="height:31px; -->
+            <div style="height:31px;">
+                <script type="text/javascript" src="./js/indexLink.js"></script>
+            </div>
+            <script type="text/javascript" src="./js/indexBottom.js"></script>
+        </div>
+    </div>
+    <!--友情链接 end-->
+
+    <script>
+        $(function() {
+            $('#bootstrapTabb a:first').tab('show'); //初始化显示哪个tab
+
+            $('#bootstrapTab a').click(function(e) {
+                e.preventDefault(); //阻止a链接的跳转行为
+                $(this).tab('show'); //显示当前选中的链接及关联的content
+            })
+        })
+    </script>
+</body>
+
+</html>

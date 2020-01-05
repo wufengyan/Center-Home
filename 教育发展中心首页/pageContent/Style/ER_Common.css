@@ -1,0 +1,1278 @@
+/*
+ * 《顺德区教育科研管理系统》
+ * 用途：通用CSS
+ * 设计者：柯华坤
+ * 创建时间：2011.11.30
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-size: 10pt;
+    color: #404040;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+em {
+    font-style: normal;
+}
+
+td {
+    font-size: 10pt;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #FF5500;
+    text-decoration: underline;
+}
+
+.bangding {
+    background: #CC0101;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.caozuozhinan {
+    position: fixed;
+    right: 30px;
+    top: 80px;
+}
+
+.caozuozhinan img {
+    width: 40px;
+}
+
+.adminlogin {
+    width: 260px;
+    margin: 0px auto;
+    border: 1px #ccc solid;
+    padding: 0;
+}
+
+.adminlogin td {
+    height: 30px;
+    margin: 0;
+}
+
+.adminlogin input[type="text"] {
+    height: 25px;
+}
+
+.adminlogin input[type="password"] {
+    height: 25px;
+    width: 120px;
+}
+
+#MainContent_txtyzma {
+    float: left;
+}
+
+#MainContent_Image1 {
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.loginbt {
+    text-align: center;
+}
+
+#MainContent_BtnLogin {
+    width: 180px;
+    background: #00bcd4;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#MainContent_txtUserType {
+    height: 28px;
+    width: 123px;
+}
+
+
+/*********************************************** 顶部 导航栏- 2011.11.30  - star */
+
+#top {
+    width: 100%;
+    /* max-width:1600px; */
+    min-width: 945px;
+    height: 160px;
+    background: url(../images/img_r1_c1.png) no-repeat center #FFFFFF;
+    margin: 0 auto;
+    background-size: auto 100%;
+}
+
+#top h1 {
+    width: 350px;
+    float: left;
+    text-indent: -9999px;
+    padding-left: 30px;
+    margin-right: 10px;
+}
+
+
+/* 长度 */
+
+.menu_nav {
+    width: 1050px;
+    height: 40px;
+    /*background:url(../images/img_r2_c1.png) no-repeat;*/
+    margin: 0 auto;
+}
+
+#new_menunav {
+    background: #9c27b0;
+    font-size: 10px;
+}
+
+#new_menunav a {
+    display: block;
+    width: 115px;
+    line-height: 40px;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    font-family: 微软雅黑;
+}
+
+#new_menunav a span {
+    width: 5px;
+    height: 30px;
+    padding-left: 25px;
+    background-size: 14px;
+    font-size: 16px;
+}
+
+#Image1 {
+    background: url(../images/Imgs1.png) no-repeat left;
+}
+
+#Image2 {
+    background: url(../images/Imgs2.png) no-repeat left;
+}
+
+#Image3 {
+    background: url(../images/Imgs3.png) no-repeat left;
+}
+
+#Image4 {
+    background: url(../images/Imgs4.png) no-repeat left;
+}
+
+#Image5 {
+    background: url(../images/Imgs5.png) no-repeat left;
+}
+
+#Image6 {
+    background: url(../images/Imgs6.png) no-repeat left;
+}
+
+#Image7 {
+    background: url(../images/Imgs7.png) no-repeat left;
+}
+
+#new_menunav a:hover {
+    background: #0887c1;
+    cursor: pointer;
+}
+
+.top_banner {
+    width: 945px;
+    /*height:220px;*/
+    background: url(../images/index_r4_c2.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.nav_content li {
+    display: block;
+    width: 127px;
+    height: 37px;
+    cursor: pointer;
+    float: left;
+}
+
+
+/*********************************************** 顶部 导航栏 - 2011.11.30  -  end */
+
+
+/*********************************************** 中间-left- 2011.11.30  - star */
+
+#middl {
+    width: 945px;
+    clear: both;
+    margin-top: 5px;
+    background: url(../images/bg.png);
+    margin: 0 auto;
+}
+
+.mid_left {
+    width: 233px;
+    float: left;
+}
+
+.left_login {
+    width: 231px;
+    border: 1px #ccc solid;
+}
+
+.left_login h1 {
+    height: 38px;
+    background: url(../images/img_r6_c1.png) no-repeat;
+}
+
+.left_login .ullogin {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    /*border-bottom:1px #DDDDCD  solid;*/
+}
+
+.left_login .ullogin li {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.left_login .ultext {
+    margin: 8px 0 0 30px;
+    text-align: left;
+}
+
+#txtUserName,
+#txtUserPass {
+    width: 100px!important;
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+#txtyzma {
+    width: 60px!important;
+    height: 23px;
+    margin-bottom: 3px;
+}
+
+#CmbUserRole {
+    width: 64.5px!important;
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+margin-top:5px;
+
+}
+.left_login .ultext li {
+    margin-bottom: 5px;
+}
+.left_login .ulbtn {
+    padding-left: 5px;
+    text-align: left;
+    /* min-height:35px; */
+    
+    overflow: hidden;
+    /* padding-bottom:15px; */
+    /* border-bottom:1px #C7C7B0 solid; */
+}
+.left_login .ulbtn li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+.login_half {
+    width: 110px;
+    text-align: center;
+}
+.left_requisition {
+    width: 231px;
+    clear: both;
+    border: 1px #ccc solid;
+    margin-top: 5px;
+}
+.left_requisition h1 {
+    height: 38px;
+    background: url(../images/img_lkt_01.png) no-repeat;
+    background-size: 100%;
+}
+.left_requisition li {
+    display: block;
+    margin-top: 5px !important;
+}
+.left_requisition li:hover {
+    opacity: 0.8;
+}
+.iflogin {
+    margin: 0;
+    padding: 0;
+    height: 139px;
+    padding-left: 15px;
+}
+.logintable {
+    width: 200px!important;
+    background: #ccc;
+}
+input[type="text"] {
+    width: 120px;
+}
+#loginframe {
+    margin-top: -20px;
+}
+#Btn_Login {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.left_questionnaire {
+    width: 231px;
+    clear: both;
+    border: 1px #ccc solid;
+    margin-top: 5px;
+    font-family: '微软雅黑';
+    min-height: 238px;
+}
+.left_questionnaire h1 {
+    height: 38px;
+    background: url(../images/img_lkt_02.png) no-repeat;
+    background-size: 100%;
+    border-bottom: 1px #ccc solid;
+    overflow: hidden;
+}
+.left_questionnaire li {
+    display: block;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 10px;
+}
+.questionnaire_title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: #0f9ae0;
+    text-align: center!important;
+}
+.toupiao {
+    width: 80px;
+    background: #0f9ae0;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.toupiao:active {
+    background: #6BC1ED;
+}
+.btcenter {
+    text-align: center!important;
+}
+
+/*********************************************** 中间-left - 2011.11.30  -  end */
+
+/*********************************************** 前台显示-内容- 2011.12.03  - star */
+#artlist {
+    width: 702px;
+    float: left;
+    border: 1px #ccc solid;
+}
+.artlist_title h1 {
+    clear: both;
+    font-size: 14px;
+    height: 38px;
+    text-align: left;
+    line-height: 38px;
+    padding-left: 50px;
+    background: url(../images/img_r6_c2.png) no-repeat;
+    margin-bottom: 2px;
+    border-bottom: 1px #ccc solid;
+}
+.listpage li {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    margin: 10px 0 0 50px;
+}
+.artlist_info {
+    width: 700px;
+}
+.artlist_info ul {
+    width: 100%;
+    clear: both;
+    line-height: 170%;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #ccc;
+}
+.artlist_info li {
+    float: left;
+    margin: 10px 10px;
+    text-align: left;
+}
+.artlist_info .titleico {
+    background: url(../images/arrow2.gif) no-repeat left 50%;
+    padding-left: 20px;
+}
+.ulprojectlist .countdown {
+    margin-bottom: 15px;
+}
+.ulprojectlist .countdown s {
+    display: inline-block;
+    width: 42px;
+    height: 35px;
+    line-height: 35px;
+    background: #5ea0fa;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-style: italic;
+    padding-right: 5px;
+}
+#artshow {
+    width: 702px;
+    min-height: 180px;
+    border: 1px #ccc solid;
+}
+#artshow h3 {
+    margin: 10px 0;
+}
+.artshow_title h1 {
+    font-size: 12px;
+    height: 38px;
+    text-align: left;
+    line-height: 38px;
+    padding-left: 50px;
+    background: url(../images/img_r6_c2.png) no-repeat;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.artshow_info {
+    width: 580px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #674F42;
+    margin: 8px 0;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 120px;
+    border-bottom: 1px #ccc dashed;
+}
+.artshow_info li {
+    float: left;
+    margin-right: 30px;
+}
+.artshow_content {
+    padding: 0 15px 20px 15px;
+    text-indent: 2em;
+    text-align: left;
+    line-height: 22px;
+    min-height: 280px
+}
+.artshow_content h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+.artshow_content h1 a {
+    font-size: 16px;
+    color: #bd0e0e;
+}
+
+/*********************************************** 前台显示-内容- 2011.12.03  - end */
+
+/*********************************************** 友情链接- 2011.11.30  - star */
+.flink {
+    clear: both;
+    margin-top: 20px;
+    width: 978px;
+    height: 150px;
+    /* background: #fff; */
+    
+    border: 1px #ccc solid;
+    margin: 0 auto;
+}
+.flink h1 {
+    font-size: 14px;
+    height: 38px;
+    text-align: left;
+    line-height: 38px;
+    padding-left: 50px;
+    background: url(../images/img_r6_c2.png) no-repeat;
+    margin-bottom: 8px;
+    border-bottom: 1px #ccc solid;
+}
+.flink li {
+    display: block;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+
+/*********************************************** 友情链接- 2011.11.30  - end */
+
+/*********************************************** 底部- 2011.11.30  - star */
+#bottom {
+    clear: both;
+    width: 945px;
+    height: 100px;
+    background: url(../images/img_r24_c1.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    border: 1px #ccc solid;
+    border-bottom: none;
+}
+#bottom ul {
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+/*********************************************** 底部 - 2011.11.30  -  end */
+
+/****************************  文字样式集合  star 2011.12.06*/
+.font_strong {
+    font-weight: bolder;
+}
+.font_center {
+    text-align: center;
+}
+.font_asterisk {
+    color: Red;
+    margin: 0 3px;
+}
+.font_asterisk1 {
+    text-decoration: none;
+    font-size: 14px;
+    color: Red;
+    margin: 0 0 0 3px;
+}
+.font_color_gray {
+    color: Gray;
+    margin: 0 3px;
+}
+.font_color_purple {
+    color: #0044DD;
+}
+.font_color_purple a {
+    color: #0044DD;
+}
+.font_color_blue {
+    color: #3366CC;
+}
+.font_color_blue a {
+    color: #3366CC;
+}
+.font_color_orange {
+    color: #FF5500;
+}
+.font_color_orange_strong {
+    color: #FF5500;
+    font-weight: bolder;
+}
+.font_color_red_strong {
+    color: #F0000;
+    font-weight: bolder;
+}
+.font_color_strong {
+    font-weight: bolder;
+}
+.font_gray_strong_center {
+    font-weight: bolder;
+    color: Gray;
+    text-align: center;
+}
+.font_issue_width {
+    width: 80px;
+    text-align: right;
+}
+
+/****************************  文字样式集合  end 2011.12.06*/
+
+/****************************  按钮样式集合  star 2011.12.07*/
+.btn_blue {
+    /*蓝色按钮 规格79*34px ----*/
+    
+    width: 79px;
+    height: 34px!important;
+    background: #139BE0;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.btn_blue a {
+    /*蓝色按钮 规格79*34px --卖家中心_我的订单--*/
+    
+    width: 79px;
+    height: 34px;
+    background: url(../images/button.png) no-repeat -20px -341px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+}
+.btn_blue a:hover {
+    font-size: 12px;
+    color: #fff;
+}
+.btn_white {
+    /*白色按钮 规格79*34px ----*/
+    
+    width: 112px;
+    height: 26px;
+    background: #009688;
+    color: #333;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.admin_title span {
+    margin-left: 15px;
+    display: block;
+}
+.btn_white a {
+    /*白色按钮 规格79*34px --*/
+    
+    width: 112px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #139BE0;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    font-family: "微软雅黑";
+}
+.btn_white a:hover {
+    font-size: 12px;
+    color: #red;
+}
+.btn_white_8123 {
+    /*白色按钮 规格81*23px ----*/
+    
+    height: 28px;
+    background: #fff;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px #ccc solid;
+}
+.btn_plcz {
+    /*批量操作按钮 ----*/
+    
+    height: 29px;
+    background: #00bcd4;
+    color: #fff;
+    padding: 8px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 1px;
+    float: right;
+}
+#btnFindPass,
+#MainContent_BtnCheckName {
+    width: 80px;
+}
+.btn_white_8123 a {
+    /*白色按钮 规格81*23px --*/
+    
+    float: right;
+    display: inline-block;
+    width: 81px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    display: block;
+    background-color: #e51c23 !important;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 3px;
+}
+.btn_white_8123 a:hover {
+    font-size: 12px;
+    color: #red;
+}
+.btn_white_8123_li {
+    width: 381px;
+    display: block;
+}
+.btn_white_8123_li a {
+    /*白色按钮 规格81*23px --*/
+    
+    width: 121x;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    background: url(../images/button.png) no-repeat -76px -538px;
+    border: none;
+    font-size: 12px;
+    color: #333;
+}
+
+/****************************  按钮样式集合  end 2011.12.07*/
+#formSave>div {
+    float: left;
+}
+#formSave {
+    padding-top: 10px;
+}
+
+/********************************* table表格颜色样式CSS控制  start  2012.11.13*/
+.table_color {
+    width: 100%;
+    height: auto;
+    border: 1px solid #c4c4b2;
+    margin: 10px auto;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #155c9f;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table_color th {
+    background-color: #f4f4e8;
+    border-right: 1px solid #c4c4b2;
+    border-bottom: 1px solid #c4c4b2;
+    text-align: left;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    width: 110px;
+}
+.table_color td {
+    border: 1px solid #c4c4b2;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 10px;
+}
+.table_color50 {
+    width: 50%;
+    height: auto;
+    border: 1px solid #c4c4b2;
+    margin: 10px auto;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #155c9f;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table_color50 th {
+    background-color: #f4f4e8;
+    border-right: 1px solid #c4c4b2;
+    border-bottom: 1px solid #c4c4b2;
+    text-align: left;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    width: 110px;
+}
+.table_color50 td {
+    border: 1px solid #c4c4b2;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 10px;
+}
+.table_color80 {
+    width: 75%;
+    height: auto;
+    border: 1px solid #c4c4b2;
+    margin: 10px auto;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #155c9f;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table_color80 th {
+    background-color: #f4f4e8;
+    border-right: 1px solid #c4c4b2;
+    border-bottom: 1px solid #c4c4b2;
+    text-align: left;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    width: 100px;
+}
+.table_color80 td {
+    border: 1px solid #c4c4b2;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 10px;
+}
+.table_color50 .tdtitle3 {
+    width: 300px;
+}
+.table_color50 .tdtitle4 {
+    width: 400px;
+}
+.table_color50 .tdbtn {
+    text-align: center;
+}
+.span_100_right {
+    display: block;
+    width: 150px;
+    text-align: right;
+}
+
+/************************************* table表格颜色样式CSS控制  end  2012.11.13*/
+
+/* 通用页码控制 2013.12.12 */
+.common_page {
+    font-size: 12px;
+    width: 320px;
+    margin: 10px auto;
+    clear: both;
+}
+.common_page .page {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    border: 10px #B4D8EC solid;
+    margin: 10px 3px;
+    color: #006CB4;
+    font-weight: bolder;
+}
+.common_page .num {
+    float: left;
+    margin: 10px auto;
+}
+.common_page a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    border: 1px #B4D8EC solid;
+    margin: 0 3px;
+    color: #006CB4;
+}
+.common_page a:hover {
+    border: 1px #5695CE solid;
+    background: #6EA5D7;
+    color: #FFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* 通用页码控制 2013.12.12 */
+
+/* 通用页码控制 2013.12.12 */
+.common_page_old {
+    font-size: 12px;
+    width: 100%;
+    margin: 20px auto;
+}
+.common_page_old a {
+    text-decoration: none;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px #B4D8EC solid;
+    color: #006CB4;
+    padding: 4px 8px;
+}
+.common_page_old a:hover {
+    border: 1px #5695CE solid;
+    background: #6EA5D7;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* 通用页码控制 2013.12.12 */
+
+/*******************************管理员基本用户管理表格优化    2016.05.13   -start  */
+#ContentPlaceHolder1_GridView1 {
+    line-height: 35px;
+    margin-left: 15px;
+    width: 680px !important;
+}
+#ContentPlaceHolder1_GridView1 tr th {
+    background: #0F9AE0;
+    color: #fff;
+}
+#ContentPlaceHolder1_txtName,
+#ContentPlaceHolder1_CmbUnitID {
+    height: 28px;
+}
+#ContentPlaceHolder1_btnSee {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #2BB584;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.DivButtontool input[type="submit"] {
+    height: 28px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn {
+    height: 28px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+}
+.DivSearch input[type="submit"] {
+    height: 26px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.DivSearch input[type="text"] {
+    height: 26px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ContentPlaceHolder1_txtName {
+    height: 26px !important;
+}
+
+/*******************************管理员基本用户管理表格优化    2016.05.13   -end  */
+
+/*******************************文本编辑器表格优化    2016.05.13   -start  */
+#ContentPlaceHolder1_txtResultName,
+#ContentPlaceHolder1_txtOwnUser,
+#ContentPlaceHolder1_txtUnitID {
+    height: 26px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#ContentPlaceHolder1_txtGetDate,
+#ContentPlaceHolder1_txtLever,
+#ContentPlaceHolder1_txtTitle {
+    height: 26px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/*******************************文本编辑器表格优化    2016.05.13   -end  */
+
+/*******************************登录页面后表格优化    2016.05.13   -start  */
+.login_success_table {
+    margin: 0 auto;
+    border: 1px #ccc solid;
+    border-collapse: collapse;
+    line-height: 30px;
+    font-size: 14px;
+}
+#MainContent_BtnBack {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.tab_box {
+    border: 1px #0F9AE0 solid
+}
+.tab_menu {
+    width: 707px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.tab_menu ul {
+    margin: 0;
+    padding: 0;
+}
+.tab_menu ul li {
+    float: left;
+    display: block;
+    width: 134px;
+    height: 40px!important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+    margin-right: 1px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+.on {
+    background: #0f9ae0;
+    color: #fff;
+}
+.un {
+    background: #ccc;
+    background-position: right;
+    color: #000;
+}
+.tab_box {
+    line-height: 30px;
+}
+.btn_red a {
+    /*白色按钮 规格81*23px ----*/
+    
+    background: #2BB584;
+    color: #000;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px;
+    display: inline-block;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.btn_delet a {
+    /*红色按钮 规格81*23px ----*/
+    
+    background: #CB0000;
+    color: #000;
+    border-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px;
+    display: inline-block;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.shenhe_state {
+    float: right!important;
+    text-align: left;
+    width: 280px;
+}
+.qiangdiao {
+    color: #139BE0;
+}
+.DivSearch select {
+    height: 28px;
+    text-align: left;
+}
+.DivSearch {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#ContentPlaceHolder1_txtQChk {
+    width: 100px;
+}
+#ContentPlaceHolder1_txtAppType,
+#ContentPlaceHolder1_txtAppPhase,
+#ContentPlaceHolder1_txtZChk {
+    width: 70px;
+}
+#ContentPlaceHolder1_txtYear {
+    width: 60px;
+}
+#ContentPlaceHolder1_txtTown {
+    width: 106px;
+}
+.addjudge input[type="text"] {
+    height: 25px!important;
+    width: 200px!important;
+}
+.addjudge input[type="password"] {
+    height: 25px!important;
+    width: 200px!important;
+}
+.addjudge input[type="submit"] {
+    height: 30px!important;
+    width: 120px!important;
+    margin-top: 10px;
+}
+.btn_del {
+    /*红色按钮 规格81*23px ----*/
+    
+    background: #CB0000;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px;
+    display: inline-block;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.btn_gre {
+    /*白色按钮 规格81*23px ----*/
+    
+    background: #2BB584;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px;
+    display: inline-block;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.btn_blu {
+    /*白色按钮 规格81*23px ----*/
+    
+    background: #0F9AE0;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px;
+    display: inline-block;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.fabubtn {
+    height: 40px;
+    clear: both;
+    width: 680px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.fabubtn input {
+    width: 100px;
+    height: 30px;
+}
+.fabubtn input[type="file"] {
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 15px;
+    color: #999;
+}
+.tjiao {
+    width: 150px!important;
+    margin-left: 250px;
+}
+.fujian {
+    width: 702px;
+    background: #80CBF1;
+}
+#fabuxinxi {
+    width: 702px;
+}
+.green {
+    background: #2BB584;
+    color: #fff;
+    border: 1px #2BB584 solid;
+}
+.blue {
+    background: #139BE0!important;
+    color: #fff;
+    border: 1px #139BE0 solid;
+}
+.red {
+    background: #DC1A1A!important;
+    color: #fff;
+    border: 1px #DC1A1A solid;
+}
+.look {
+    height: 26px;
+    line-height: 28px;
+    display: block;
+    width: 90px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.textem {
+    line-height: 80px;
+    height: 80px;
+    float: left;
+}
+.ulprojectlist textarea {
+    resize: none;
+}
+.nav100 {
+    width: auto;
+    background: #9c27b0;
+    height: 40px;
+    margin: 5px auto;
+    /* margin-left: 110px; */
+}
